@@ -28,6 +28,10 @@ const PersonSchema = mongoose.Schema({
       "Content-Creator"  
     ]
   },
+  userId: {
+    type: String,
+    required: [true, "UserId can't be blank."]
+  },
   createdAt: {
     type: Date,
     default: Date.now
