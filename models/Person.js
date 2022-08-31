@@ -28,9 +28,9 @@ const PersonSchema = mongoose.Schema({
       "Content-Creator"  
     ]
   },
-  userId: {
+  _id: {
     type: String,
-    required: [true, "UserId can't be blank."]
+    required: [true, "_id can't be blank."]
   },
   createdAt: {
     type: Date,
